@@ -1,5 +1,117 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|PT+Sans:400,700);
+
+
 body {
-  padding-top: 0px;
-  padding-bottom: 0px;
+	font-family: 'PT Sans', sans-serif;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Playfair Display', serif;	
+	color: #002e58;
+}
+
+h2 {
+	text-align: center;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.navbar-right {
+	margin-right: 0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+}
+
+.jumbotron {
+	padding-top: 0px;
+	background: #002e58 url(../assets/images/banner.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	color: #e5e5e5;
+	font-size: 3em;
+	font-size: 48px;
+	text-align: center;
+	line-height: 1;
+	mix-blend-mode: hard-light;
+}
+
+#line-one {
+	padding-right: 20px;
+}
+
+#line-two {
+	padding-left: 20px;
+}
+
+.jumbotron p {
+	text-align: center;
+	font-weight: 400;
+}
+
+.jumbotron h1 span {
+	color: #cece19;
+}
+
+.jumbotron .container {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.btn {
+	margin: 10px 5px;
+	border-radius: 0px;
+	background-color: transparent;
+	border-color: #fff;	
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+	color: #002e58;
+	background-color: #fff;
+}
+
+.btn-primary {
+	background-color: #fff;
+	color: #002e58;
+}
+
+.btn-primary:hover {
+	background-color: #002e58;
+	color: #fff;
+	border-color: #fff;
+}
+
+@media (max-width: 767px) {
+	#line-one, #line-two {
+		padding: 0px;
+	}
 }

@@ -12,21 +12,21 @@ p {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+	text-align: center;
+	color: #002e58;
 }
 
 h1,h2,h3 {
 	font-family: 'Playfair Display', serif;	
 	color: #002e58;
+	text-align: center;
+	font-weight: 400;
 }
 
 h4,h5,h6 {
 	font-family: 'PT Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	color: #002e58;
-}
-
-h2 {
-	text-align: center;
 }
 
 .navbar-default {
@@ -53,13 +53,18 @@ h2 {
 	border: none;
 }
 
-.jumbotron {
+.jumbotron p {
+	text-align: center;
+	font-weight: 400;
+}
+
+.front-page-1 {
 	padding-top: 0px;
-	background: #002e58 url(../assets/images/banner.jpg) no-repeat 100% 100%;
+	background: #002e58 url(../assets/images/banner.jpg) no-repeat 50% 100%;
     background-size: cover;
 }
 
-.jumbotron h1 {
+.front-page-1 h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
 	color: #e5e5e5;
@@ -78,16 +83,11 @@ h2 {
 	padding-left: 20px;
 }
 
-.jumbotron p {
-	text-align: center;
-	font-weight: 400;
-}
-
-.jumbotron h1 span {
+.front-page-1 h1 span {
 	color: #cece19;
 }
 
-.jumbotron .container {
+.front-page-1 .container {
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -139,6 +139,14 @@ h2 {
 	color: #fff;
 }
 
+.blend-darken {
+	mix-blend-mode: darken;
+}
+
+#front-page-2 {
+	margin-bottom: 60px;
+}
+
 .media:first-child {
 	margin-top: 20px;
 }
@@ -157,12 +165,90 @@ h2 {
 	text-align: center;
 }
 
+#front-page-3 {
+	background-color: #badcec;
+}
+
+#front-page-3 h2 {
+	text-align: left;
+}
+
+#front-page-3 span {
+	text-decoration: underline;
+}
+
+#front-page-4 {
+	margin-bottom: 60px;
+}
+
+.specialisms {
+	background-color: #002e58;
+	display: block;
+	margin: 1%;
+	width: 23%;
+}
+
+.specialisms h4 {
+	color: #fff;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+a h4:hover{
+	text-decoration: underline;
+}
+
+#academies {
+	background: #002e58 url(../assets/images/academies-blue.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#manufacturing {
+	background: #002e58 url(../assets/images/manufacturing-blue.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#charities {
+	background: #002e58 url(../assets/images/charities-blue.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#recruitment {
+	background: #002e58 url(../assets/images/recruitment-blue.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#front-page-5 {
+	background-color: #002e58;
+	color: #fff;
+}
+
+#front-page-5 h3 {
+	color: #fff;
+}
+
+.author {
+	color: #cece19;
+	text-align: center
+}
+
 @media (max-width: 767px) {
 	#line-one, #line-two {
 		padding: 0px;
 	}
 
-	.media p, span {
+	#front-page-2 h4 span {
 		display: none;
+	}
+
+	#front-page-3 h2 {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.specialisms {
+		margin: 0%;
+		width: 50%;
 	}
 }

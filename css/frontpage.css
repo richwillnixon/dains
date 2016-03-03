@@ -128,15 +128,31 @@ h4,h5,h6 {
 }
 
 .btn-dark {
+	background-color: #002e58;
 	border-color: #002e58;
-	color: #002e58;
-	display: inherit;
+	color: #fff;
 }
 
 .btn-dark:hover, .btn-dark:focus {
+	background-color: #fff;
+	border-color: #fff;
+	color: #002e58;
+}
+
+.btn-outline {
+	border-color: #002e58;
+	background-color: transparent;
+	color: #002e58;
+}
+
+.btn-outline:hover, .btn-outline:focus {
 	border-color: #002e58;
 	background-color: #002e58;
 	color: #fff;
+}
+
+#front-page-2 .btn-outline {
+	display: inherit;
 }
 
 .blend-darken {
@@ -175,6 +191,10 @@ h4,h5,h6 {
 
 #front-page-3 span {
 	text-decoration: underline;
+}
+
+#front-page-3 .btn {
+	padding: 10px 40px;
 }
 
 #front-page-4 {
@@ -231,6 +251,18 @@ a h4:hover{
 .author {
 	color: #cece19;
 	text-align: center
+}
+
+#front-page-6 div {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#front-page-6 img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 400px;
 }
 
 @media (max-width: 767px) {
